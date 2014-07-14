@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Overlay It Plugin</title>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="overlay_it.min.js"></script>
+		<script>
+			$(function() {
+				$('body').overlay_it({
+					html: '<div class="image">Image box</div>'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header class="block">
+			<div class="container">
+				<h1>Overlay It Plugin</h1>
+				<p>Simple overlay for a webpage.</p>
+			</div><!--/container-->
+		</header><!--/block-->
+		<section class="block">
+			<div class="container">
+				<div class="left block">
+					<h3>How to Implement</h3>
+					<p>The enclosed css code already has the overlay in a fixed position, so you should most likely activate this on the 'body' tag for best results.<p>
+					<p>The attributes that Overlay_it supports are as follows:</p>
+					<ul>
+						<li>html:  'Place your HTML code here to display in the white window.  You can style this however you wish.'</li>
+						<li>close_html: 'Override the default HTML in the close button div.  This is if you would want to include an icon, etc.'</li>
+					</ul>
+<pre>
+	$('body').overlay_it({<br />
+		html: '&lt;h1&gt;Testing&lt;/h1&gt;',<br />
+		close_html: '&lt;span&gt;Close&lt;/span&gt;'<br />
+	});
+</pre>
+				</div><!---/block-->
+			</div><!--/container-->
+		</section>
+		<footer>
+			<div class="container">
+
+			</div><!--/container-->
+		</footer>
+
+	</body>
+</html>
